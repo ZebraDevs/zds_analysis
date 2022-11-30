@@ -14,7 +14,7 @@
 
 This package provides lint rules for Dart and Flutter which are used at Zebra Technologies Corporation.
 
-**Note**: This package was heavily inspired by [very_good_analysis][https://pub.dev/packages/very_good_analysis].
+**Note**: This package was heavily inspired by https://pub.dev/packages/very_good_analysis.
 
 ## Usage
 
@@ -22,7 +22,10 @@ To use the lints, add as a dev dependency in your `pubspec.yaml`:
 
 ```yaml
 dev_dependencies:
-  ztmf_analysis: ^1.0.0
+  ztmf_analysis:
+    git:
+      url: https://github.com/zebratechnologies/ztmf-analysis.git
+      ref: main
 ```
 
 Then, add an include in `analysis_options.yaml`:
@@ -34,7 +37,13 @@ include: package:ztmf_analysis/analysis_options.yaml
 This will ensure you always use the latest version of the lints. If you wish to restrict the lint version, specify a version of `analysis_options.yaml` instead:
 
 ```yaml
-include: package:ztmf_analysis/analysis_options.3.1.0.yaml
+include: package:ztmf_analysis/analysis_options.1.0.0.yaml
+```
+
+For strict typed rules, use
+
+```yaml
+include: package:ztmf_analysis/analysis_options_strict.1.0.0.yaml
 ```
 
 ## Suppressing Lints
