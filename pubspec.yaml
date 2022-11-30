@@ -1,6 +1,6 @@
 name: ztmf_analysis
 description: Lint rules for Dart and Flutter used internally at Zebra Technologies
-version: 1.0.0
+version: 3.1.0
 publish_to: none
 
 environment:
