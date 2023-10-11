@@ -1,17 +1,9 @@
-name: ztmf_analysis
+name: zds_analysis
 description: Lint rules for Dart and Flutter used internally at Zebra Technologies
-version: 3.1.0
-publish_to: none
+homepage: https://github.com/ZebraDevs/zds_analysis
+repository: https://github.com/ZebraDevs/zds_analysis
+issue_tracker: https://github.com/zebradevs/zds_analysis/issues
+version: 1.0.0
 
 environment:
-  sdk: ">=2.18.0 <3.0.0"
-  flutter: 3.3.7
-
-dependencies:
-  flutter:
-    sdk: flutter
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  mocktail: ^0.3.0
+  sdk: ">=2.18.0 <4.0.0"

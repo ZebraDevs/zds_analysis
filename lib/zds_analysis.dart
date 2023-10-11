@@ -6,4 +6,4 @@
 // https://opensource.org/licenses/MIT.
 
 /// Lint rules for Dart and Flutter used internally at Zebra Technologies
-library ztmf_analysis;
+library zds_analysis;

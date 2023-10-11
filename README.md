@@ -1,20 +1,8 @@
-# Zebra Technologies Corporation
-
-<details>
-    <summary>Zebra Repository Information</summary>
-    <ul>
-        <li> Zebra Business Unit : ZTM  </li>
-        <li> Zebra Manager : aw7799 </li>
-        <li> Zebra Repo Admin: as3228 </li>
-        <li> Zebra Jira Project ID: TM  </li>
-        <li> Product: MyWork </li>
-        <li> Topics: no_codeql </li>
-    </ul>
-</details>
+# ZDS Analysis
 
 This package provides lint rules for Dart and Flutter which are used at Zebra Technologies Corporation.
 
-**Note**: This package was heavily inspired by https://pub.dev/packages/very_good_analysis.
+**Note**: This package was heavily inspired by both [Very Good Analysis](https://pub.dev/packages/very_good_analysis) and [RydMike](https://rydmike.com/blog_flutter_linting.html).
 
 ## Usage
 
@@ -22,34 +10,40 @@ To use the lints, add as a dev dependency in your `pubspec.yaml`:
 
 ```yaml
 dev_dependencies:
-  ztmf_analysis:
-    git:
-      url: https://github.com/zebratechnologies/ztmf-analysis.git
-      ref: main
+  zds_analysis: ^1.0.0
 ```
 
 Then, add an include in `analysis_options.yaml`:
 
 ```yaml
-include: package:ztmf_analysis/analysis_options.yaml
+include: package:zds_analysis/analysis_options.yaml
 ```
 
-This will ensure you always use the latest version of the lints. If you wish to restrict the lint version, specify a version of `analysis_options.yaml` instead:
+This will ensure you always use the latest version of the lints.
+
+Our versions follow the Dart SDK versions. If you wish to restrict the lint version, specify a version of `analysis_options.yaml`.
+For example, for projects using Dark SDK versions 2.18.x:
 
 ```yaml
-include: package:ztmf_analysis/analysis_options.3.1.0.yaml
+include: package:zds_analysis/analysis_options.2.18.yaml
 ```
 
-
-For strict typed rules, use
+For strict typed rules, use:
 
 ```yaml
-include: package:ztmf_analysis/analysis_options_strict.yaml
+include: package:zds_analysis/analysis_options_strict.yaml
 ```
-OR, specific version
+
+Or, specific version:
 
 ```yaml
-include: package:ztmf_analysis/analysis_options_strict.3.1.0.yaml
+include: package:zds_analysis/analysis_options_strict.2.18.yaml
+```
+
+For library specific lints (not for use in applications):
+
+```yaml
+include: package:zds_analysis/analysis_options_lib.yaml
 ```
 
 ## Suppressing Lints
@@ -84,7 +78,7 @@ class B {}
 To suppress a specific lint rule for an entire project, modify `analysis_options.yaml`:
 
 ```yaml
-include: package:ztmf_analysis/analysis_options.yaml
+include: package:zds_analysis/analysis_options.yaml
 linter:
   rules:
     public_member_api_docs: false
