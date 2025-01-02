@@ -39,3 +39,5 @@ linter:
     unnecessary_final: false
     avoid_annotating_with_dynamic: false
     avoid_catches_without_on_clauses: false
+    specify_nonobvious_local_variable_types: false
+    omit_obvious_local_variable_types: false

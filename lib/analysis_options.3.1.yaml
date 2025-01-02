@@ -198,3 +198,6 @@ linter:
     - use_to_and_as_if_applicable
     - valid_regexps
     - void_checks
+    - invalid_runtime_check_with_js_interop_types
+    - unintended_html_in_doc_comment
+    - unnecessary_library_name
