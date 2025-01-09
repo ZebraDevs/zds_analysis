@@ -11,17 +11,6 @@ analyzer:
     missing_return: error
     parameter_assignments: warning
 
-  exclude:
-    - test/.test_coverage.dart
-    - test/*.g.dart
-    - test/**/*.g.dart
-    - test/**/*.mocks.dart
-    - lib/*.g.dart
-    - lib/**/*.g.dart
-    - lib/*.freezed.dart
-    - lib/**/*.freezed.dart
-    - lib/generated_plugin_registrant.dart
-
 linter:
   rules:
     always_put_control_body_on_new_line: false
