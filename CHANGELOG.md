@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/ZebraDevs/zds_analysis/compare/v1.1.0...v1.1.1) (2025-01-09)
+
+
+### 👀 Reverts
+
+* analysis_options_lib file reverted ([aebc47c](https://github.com/ZebraDevs/zds_analysis/commit/aebc47c7d22093298f40bf85cdbe43aa3ad261cd))
+
 ## [1.1.0](https://github.com/ZebraDevs/zds_analysis/compare/v1.0.1...v1.1.0) (2025-01-09)
 
 
