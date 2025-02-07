@@ -22,10 +22,13 @@ analyzer:
     - lib/**/*.freezed.dart
     - lib/generated_plugin_registrant.dart
 
+  plugins:
+    - ../custom-lint.dart
+
 linter:
   rules:
     always_put_control_body_on_new_line: false
-    always_put_required_named_parameters_first: false
+    always_put_required_named_parameters_first:
     always_specify_types: false
     always_use_package_imports: false
     avoid_classes_with_only_static_members: false
