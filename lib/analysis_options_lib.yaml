@@ -41,3 +41,4 @@ linter:
     avoid_catches_without_on_clauses: false
     specify_nonobvious_local_variable_types: false
     omit_obvious_local_variable_types: false
+    omit_obvious_property_types: false
