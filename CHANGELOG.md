@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/ZebraDevs/zds_analysis/compare/v1.1.1...v1.2.0) (2025-05-21)
+
+
+### ✨ New Features
+
+* update lint rules ([#5](https://github.com/ZebraDevs/zds_analysis/issues/5)) ([a2c4e1a](https://github.com/ZebraDevs/zds_analysis/commit/a2c4e1a9f40509316d49a36ba0575bd4de900b90))
+
 ## [1.1.1](https://github.com/ZebraDevs/zds_analysis/compare/v1.1.0...v1.1.1) (2025-01-09)
 
 
